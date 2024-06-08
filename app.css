@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background-color: #60a9ff;
+}
+
+.panel {
+  width: 70%;
+  background-color: white;
+  border-radius: 15px;
+  margin: 60px auto;
+  height: 600px;
+  display: flex;
+}
+.pricing-plan img {
+  width: 250px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgb(128, 128, 128);
+}
+
+li {
+  list-style: none;
+  padding: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #526cf1;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+ul {
+  padding: 0;
+  text-align: center;
+  width: 197px;
+}
+
+span {
+  text-transform: uppercase;
+  color: #526cf1;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.pricing-features-item {
+  border-top: 1px solid rgba(146, 193, 248, 0.542);
+}
+
+.pricing-features li:last-of-type {
+  border-bottom: 1px solid rgba(146, 193, 248, 0.542);
+}
+
+.pricing-plan {
+  padding: 25px 30px;
+  border-right: 1px solid rgba(146, 193, 248, 0.542);
+  margin: 15px 0;
+  width: calc(65% / 3);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pricing-plan:last-of-type {
+  border: none;
+}
+
+.pricing-button {
+  text-decoration: none;
+  border: 1px solid #8297fe;
+  padding: 12px 30px;
+  color: #60a9ff;
+  margin-top: 12px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.pricing-button:hover {
+  background-color: rgba(209, 220, 251, 0.403);
+}
+
+.pricing-plan .is-featured {
+  background-color: #60a9ff;
+  color: white;
+}
+.pricing-plan .is-featured:hover {
+  background-color: #3a90f3;
+}
+
+@media (max-width: 1108px) {
+  body {
+    background-color: white;
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .pricing-plan{
+    border: none;
+    width: 67%;
+  }
+  .pricing-plan img {
+    width: 300px;
+  }
+  h2{
+    font-size: 1.4rem;
+  }
+  ul{
+    width: 250px;
+  }
+  li{
+    font-size: 1rem;
+  }
+  span{
+    margin-bottom: 23px;
+  }
+}
