@@ -4,7 +4,8 @@ body {
 }
 
 .panel {
-  width: 70%;
+  width: 100%;
+  max-width: 960px;
   background-color: white;
   border-radius: 15px;
   margin: 60px auto;
@@ -12,7 +13,7 @@ body {
   display: flex;
 }
 .pricing-plan img {
-  width: 250px;
+  max-width: 100%;
 }
 
 h2 {
@@ -60,7 +61,7 @@ span {
   padding: 25px 30px;
   border-right: 1px solid rgba(146, 193, 248, 0.542);
   margin: 15px 0;
-  width: calc(65% / 3);
+  width: calc(70% / 3);
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -91,11 +92,15 @@ span {
   background-color: #60a9ff;
   color: white;
 }
-.pricing-plan .is-featured:hover {
-  background-color: #3a90f3;
+
+.is-featured{
+  transition: background-color ease-in-out 0.3s;
+}
+.pricing-plan .is-featured:focus {
+  background-color: #021326;
 }
 
-@media (max-width: 1108px) {
+@media (max-width: 700px) {
   body {
     background-color: white;
   }
@@ -104,25 +109,24 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
-  .pricing-plan{
+  .pricing-plan {
     border: none;
     width: 67%;
   }
   .pricing-plan img {
     width: 300px;
   }
-  h2{
+  h2 {
     font-size: 1.4rem;
   }
-  ul{
+  ul {
     width: 250px;
   }
-  li{
+  li {
     font-size: 1rem;
   }
-  span{
+  span {
     margin-bottom: 23px;
   }
 }
